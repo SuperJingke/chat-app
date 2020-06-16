@@ -23,7 +23,7 @@ $msgForm.addEventListener('submit', (event) => {
 	event.preventDefault()
 
 	socket.emit('chatmsg', {msg: event.currentTarget.txt.value})
-	event.currentTarget.txt.value = ''
+	event.currentTarget.txt.value = 'chatmsg'
 })
 
 
