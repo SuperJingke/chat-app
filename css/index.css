@@ -1,0 +1,28 @@
+
+
+
+
+.sender {
+    display: flexbox;
+    background-color: grey;
+    float: left;
+}
+
+.me {
+    float: right;
+}
+.me li{
+    display: flexbox;
+    background-color:#008000;
+    
+}
+
+footer{
+    bottom: 0;
+
+}
+
+.typing {
+     bottom: 0em;
+     text-align:center;
+}

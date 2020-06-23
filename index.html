@@ -9,17 +9,31 @@
 		<link rel="stylesheet" href="css/index.css">
 	</head>
 	<body>
-		<h1>Hello World</h1>
+		<main>
+			<h1>Chat-app</h1>
 
 		<!-- Form: Input field, send button, 
 				 Messages: ordered list -->
-		<form id="sendMsg">
-			<input type="text" id="txt">
-			<button type="submit">Send</button>
-		</form>
 
-		<ol id="messages"></ol>
-
+			<ol class="sender">
+				<li>Hello, how are you?</li>
+			</ol>
+			<br>
+			<br>
+			<br>
+			<ol class="me" id="messages">
+				<li>Good. My pleasure to meet you. What your name?</li>
+			</ol>
+		</main>
+		<br>
+		<br>
+		<footer>
+			<form class="typing" id="sendMsg">
+				<input type="text" id="txt">
+				<button type="submit">Send</button>
+			</form>
+		</footer>
+		
 		<script src="/socket.io/socket.io.js"></script>
 		<script src="js/index.js"></script>
 	</body>

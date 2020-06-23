@@ -29,7 +29,9 @@ $msgForm.addEventListener('submit', (event) => {
 
 socket.on('chatmsg', (data) => {
 	const newMsg = document.createElement('li')
+	const inputValue = document.getElementById("messages").value;
 	$msgList.appendChild(newMsg)
+	if (inputV)
 
 	newMsg.textContent = data.msg
 })
